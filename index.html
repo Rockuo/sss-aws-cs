@@ -8,16 +8,26 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/solarized.css">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/solarized.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown="slides/greetings.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+				<section data-markdown="slides/requirements-and-solutions.html"></section>
+				<section data-markdown="slides/bref.html"></section>
+				<section data-markdown="slides/our-usecase.html"></section>
+				<section data-markdown="slides/implementation.html"></section>
+				<section data-markdown="slides/serverless.md"></section>
+				<section data-markdown="slides/index-php.md"></section>
+				<section data-markdown="slides/task-php.md"></section>
+				<section data-markdown="slides/deployment.md"></section>
+				<section data-markdown="slides/monitoring.html"></section>
+				<section data-markdown="slides/questions.md"></section>
 			</div>
 		</div>
 
@@ -31,6 +41,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				history: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
