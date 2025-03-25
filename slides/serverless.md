@@ -1,5 +1,5 @@
 ## Serverless Konfigurace
-```yaml [4-10|15-24|33-60]
+```yaml [4-10|8|9|10|15-24|17|19-20|22|23-24|33-60|37|10|38-44|47-52|55-60|22]
 # serverless.yaml
 service: app
 
@@ -9,7 +9,7 @@ provider:
   environment:
     APP_ENV: ${sls:stage}
     PROPAGATED_ENV: ${env:MS_API_KEY}
-    APPLICATION_ENV_CONFIGURATION: ${self:custom.${sls:stage}.myVariable}
+    APP_ENV_CONFIGURATION: ${self:custom.${sls:stage}.myVariable}
 
 plugins:
   - ./vendor/bref/bref
@@ -61,3 +61,16 @@ custom:
         - subnet-p123a
         - subnet-p123b
 ```
+
+Notes:
+Předem varuji, že jde o pseudokód
+1. Kam to chceme nasadit (nejen AWS) a jaké proměnné propagujeme
+   1. Serverless přepínače
+   2. Propagace proměnných z gitlab pipeline
+   3. ENV proměnná definovaná níže
+2. Možno definovat více funkci
+   1. Handler 
+   2. runtime + arhitecture = PHP image
+   3. AWS security groups a subnety
+   4. APP env (např název appky pro monitoring)
+3. Definice Custom proměnných které se vloží do konfigurace 

@@ -27,3 +27,7 @@ class Task implements TaskInterface
     }
 }
 ```
+
+Notes:
+* A další věci definujeme v Tasku
+* Provede svou akci

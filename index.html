@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Malá serverless služba v AWS</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -27,6 +27,22 @@
 				<section data-markdown="slides/task-php.md"></section>
 				<section data-markdown="slides/deployment.md"></section>
 				<section data-markdown="slides/monitoring.html"></section>
+				<section>
+					<h2>Čeho jsme dosáhli</h2>
+					<img src="slides/images/diagram.png">
+					<aside class="notes">
+						Celý Půchod uživatele je aplikačně trackovaný a dohledatelný pod společným identifikátorem
+						<ol>
+							<li>Uživatel</li>
+							<li>Webnode checkout</li>
+							<li>EventBridge Bus</li>
+							<li>EventBridge Scheduler</li>
+							<li>Lambdas</li>
+							<li>Webnode api (Microservices)</li>
+							<li>Zápis do DB a odeslání emailu</li>
+						</ol>
+					</aside>
+				</section>
 				<section data-markdown="slides/questions.md"></section>
 			</div>
 		</div>

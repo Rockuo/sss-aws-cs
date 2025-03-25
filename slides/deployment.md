@@ -1,5 +1,5 @@
 ## Gitlab CI/CD
-```yml [8-16|18-21|23-33]
+```yml [8-16|18-23|25-33]
 image: ${BASE_WORKER_IMAGE}
 
 stages:
@@ -33,3 +33,9 @@ testing:
 # other environments
 # ...
 ```
+
+Notes:
+Nasazení lambdy
+* Kompilace jako kádá jiná
+* Statické analýzy a další kontroly
+* Deploy pomocí serverless

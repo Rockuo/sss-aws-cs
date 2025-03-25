@@ -23,3 +23,6 @@ return function ($event) {
 };
 
 ```
+Notes:
+* Vše by mohlo být naimplementováno zde
+* My chceme mít ale nějakou architekruru a balíčky na které jsme zvyklí
