@@ -22,8 +22,7 @@
 			<img src="slides/images/qr.png" style="position: relative" width="100%">
 		</div>
 		<div class="reveal">
-			<div class="slides"
-			>
+			<div class="slides">
 				<section data-external="slides/greetings.html"></section>
 				<section data-external="slides/requirements-and-solutions.html"> </section>
 				<section data-external="slides/bref.html"></section>
@@ -50,18 +49,18 @@
 						</ol>
 					</aside>
 				</section>
-				<section>
-					<h1>Otázky?</h1>
-					<img src="slides/images/qr.png" width="50%">
+				<section class="center">
+					<iframe src="https://app.sli.do/event/5zSZaFM1zPGTKTVreEjpDJ" height="100%" width="95%" style="min-height: 560px;"></iframe>
+<!--					<img src="slides/images/qr.png" width="50%">-->
 				</section>
 			</div>
 		</div>
 
+		<script src="plugin/external/external.js"></script>
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/external/external.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -75,14 +74,13 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
-			Reveal.on('slidechanged', (event) => {
-				console.log(Reveal.getProgress())
-				if (Reveal.getProgress() === 1) {
-					document.getElementById('qr-footer').style.display = 'none';
-				} else {
-					document.getElementById('qr-footer').style.display = 'block';
-				}
-			});
+			// Reveal.on('slidechanged', (event) => {
+			// 	if (Reveal.getProgress() === 1) {
+			// 		document.getElementById('qr-footer').style.display = 'none';
+			// 	} else {
+			// 		document.getElementById('qr-footer').style.display = 'block';
+			// 	}
+			// });
 		</script>
 	</body>
 </html>
