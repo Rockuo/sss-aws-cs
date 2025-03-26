@@ -20,14 +20,14 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 :root {
   --r-background-color: #f5fbff;
   --r-main-font: GraphikCommercial,"Adjusted Arial Fallback","Adjusted Lucida Grande Fallback","Helvetica Neue",Helvetica,Verdana,sans-serif;;
-  --r-main-font-size: 30px;
+  --r-main-font-size: 1.6em;
   --r-main-color: #333;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: GraphikCommercial,"Adjusted Arial Fallback","Adjusted Lucida Grande Fallback","Helvetica Neue",Helvetica,Verdana,sans-serif;;
   --r-heading-color: #333;
   --r-heading-line-height: 1.2;
-  --r-heading-letter-spacing: -0.08em;
+  --r-heading-letter-spacing: normal;
   --r-heading-text-transform: uppercase;
   --r-heading-text-shadow: none;
   --r-heading-font-weight: normal;
