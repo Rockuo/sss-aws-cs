@@ -24,17 +24,11 @@
 		<div class="reveal">
 			<div class="slides"
 			>
-				<section
-						data-markdown="slides/greetings.md"
-						data-separator="^\n\n\n"
-						data-separator-vertical="^\n\n"
-
-				></section>
-				<section data-markdown="slides/requirements-and-solutions.html"
-				></section>
-				<section data-markdown="slides/bref.html"></section>
-				<section data-markdown="slides/our-usecase.html"></section>
-				<section data-markdown="slides/implementation.html"></section>
+				<section data-external="slides/greetings.html"></section>
+				<section data-external="slides/requirements-and-solutions.html"> </section>
+				<section data-external="slides/bref.html"></section>
+				<section data-external="slides/our-usecase.html"></section>
+				<section data-external="slides/implementation.html"></section>
 				<section data-markdown="slides/serverless.md"></section>
 				<section data-markdown="slides/index-php.md"></section>
 				<section data-markdown="slides/task-php.md"></section>
@@ -67,6 +61,7 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/external/external.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
